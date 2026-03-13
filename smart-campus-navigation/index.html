@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Smart Campus Navigation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Smart Campus Navigation - LPU</h2>
+
+<div class="panel">
+
+<label>Start Location</label>
+<input id="start" placeholder="Example: MainGate or 24">
+
+<label>Destination</label>
+<input id="end" placeholder="Example: 36">
+
+<button onclick="findRoute()">Find Route</button>
+
+<p id="result"></p>
+
+</div>
+
+<div class="map">
+<img src="assets/lpu-campus-map.png">
+</div>
+
+<script src="dijkstra.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
